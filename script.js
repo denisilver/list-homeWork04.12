@@ -1,30 +1,22 @@
-const input = document.querySelector('input');
-const btn = document.querySelector('btn');
-const list = document.querySelector('list');
+const input = document.querySelector('.input');
+const btn = document.querySelector('.btn');
+const list = document.querySelector('.list');
 
-btn.addEventListener('click', function(event)
-{
+btn.addEventListener('click',function(event){
+
     let li = document.createElement('li');
     li.innerHTML = input.value;
-    
     list.appendChild(li);
 
     if(li.innerHTML > 10){
-        li.className = "red";
-    }
-
-    if(li.innerHTML < 10){
-        li.className = "green";
-    }
-
+        li.className="red";
+    };
     if(li.innerHTML == 10){
-        li.className = "blue";
-    }
-
-    if(li.innerHTML)
-
-
+        li.className="green";
+    };
+    if(li.innerHTML < 10){
+        li.className="blue";
+    };
     
-})
 
-
+});
